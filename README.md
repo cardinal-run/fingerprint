@@ -28,7 +28,7 @@ void main() async {
 
   // Shows the hash that represents the fingerprint.
   print(fingerprint);
-}cc
+}
 ```
 
 ## 🎯 Accuracy

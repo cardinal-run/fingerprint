@@ -47,7 +47,7 @@ class Fingerprint {
 
   /// {@macro fingerprint}
   ///
-  /// Create a new [Fingerprint] using the given [sources]. If no [sources] is
+  /// Create a new [Fingerprint] using the given [sources]. If no [sources] are
   /// given it will use the [Fingerprint.defaultSources].
   ///
   /// Optionally you can pass a map of [components] that are precomputed results
