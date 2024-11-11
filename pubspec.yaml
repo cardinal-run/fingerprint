@@ -1,0 +1,13 @@
+name: fingerprint
+description: A package for creating fingerprints of any environment.
+version: 0.1.0
+repository: https://github.com/cardinal-run/fingerprint
+issue_tracker: https://github.com/cardinal-run/fingerprint/issues
+topics: [fingerprint, detection, identification, fingerprinting]
+
+environment:
+  sdk: ">=3.4.0 <4.0.0"
+  flutter: ">=3.22.0"
+
+dev_dependencies:
+  very_good_analysis: ^6.0.0
