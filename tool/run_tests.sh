@@ -8,7 +8,7 @@ flutter test --coverage --coverage-path=coverage/ui_lcov.info --platform=tester 
 flutter test --coverage --coverage-path=coverage/ui_web_lcov.info --platform=chrome test/src/sources/ui_test.dart
 
 # Remove the PWD from the paths so it is aligned with Flutter's LCOV output.
-sed -i '' "s|$(pwd)/||g" coverage/js_lcov.info
-sed -i '' "s|$(pwd)/||g" coverage/io_lcov.info
+sed -i.bu "s|$(pwd)/||g" coverage/js_lcov.info
+sed -i.bu "s|$(pwd)/||g" coverage/io_lcov.info
 
 lcov -a "coverage/*_lcov.info" -o coverage/merged.lcov

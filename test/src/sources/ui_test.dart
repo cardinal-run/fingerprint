@@ -1,3 +1,5 @@
+import 'dart:io';
+
 import 'package:device_info_plus/device_info_plus.dart';
 import 'package:device_info_plus_platform_interface/device_info_plus_platform_interface.dart';
 import 'package:fingerprint/fingerprint.dart';
@@ -27,6 +29,9 @@ class _MockDeviceInfoPlatform extends DeviceInfoPlatform {
         hardwareConcurrency: null,
       );
     }
+    if (Platform.isLinux) {
+      return LinuxDeviceInfo(name: '', id: '', prettyName: '', machineId: '');
+    }
     return MacOsDeviceInfo.fromMap({
       'computerName': '',
       'hostName': '',
@@ -52,7 +57,7 @@ void main() {
     DeviceInfoPlatform.instance = _MockDeviceInfoPlatform();
   });
 
-  test('ui', tags: 'sources', () async {
+  test('Flutter (${kIsWeb ? 'Web' : 'IO'})', tags: 'sources', () async {
     final fingerprint = await Fingerprint.create();
 
     final canonical = fingerprint.toCanonicalString();

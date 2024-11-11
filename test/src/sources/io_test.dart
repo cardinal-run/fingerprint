@@ -7,7 +7,7 @@ import 'package:test/test.dart';
 import '../../matchers/matchers.dart';
 
 void main() {
-  test('io', tags: 'sources', () async {
+  test('Dart (IO)', tags: 'sources', () async {
     final fingerprint = await Fingerprint.create();
 
     final canonical = fingerprint.toCanonicalString();
