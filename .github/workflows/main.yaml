@@ -53,5 +53,5 @@ jobs:
       - name: 📊 Check Code Coverage
         uses: VeryGoodOpenSource/very_good_coverage@v3
         with:
-          path: coverage/lcov.info
+          path: coverage/merged.info
           min_coverage: 87
