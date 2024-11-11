@@ -40,8 +40,6 @@ While the prerequisites above must be satisfied prior to having your pull reques
 reviewer(s) may ask you to complete additional work, tests, or other changes before your pull 
 request can be ultimately accepted.
 
-## Setting 
-
 [conventional_commits_link]: https://www.conventionalcommits.org/en/v1.0.0
 [issue_creation_link]: https://github.com/cardinal.run/fingerprint/issues/new/choose
 [cardinal_run_link]: https://cardinal.run

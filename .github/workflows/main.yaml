@@ -28,6 +28,9 @@ jobs:
       - name: 📚 Git Checkout
         uses: actions/checkout@v4
 
+      - name: 📝 Setup LCOV
+        uses: hrishikesh-kadam/setup-lcov@v1
+
       - name: 🐦 Setup Flutter
         uses: subosito/flutter-action@v2
         with:
@@ -50,5 +53,5 @@ jobs:
       - name: 📊 Check Code Coverage
         uses: VeryGoodOpenSource/very_good_coverage@v3
         with:
-          path: coverage/lcov.info
-          min_coverage: 88
+          path: coverage/merged.lcov
+          min_coverage: 87

@@ -1,0 +1,10 @@
+export 'package:fingerprint/src/sources/architecture.dart';
+export 'package:fingerprint/src/sources/locale.dart';
+export 'package:fingerprint/src/sources/math.dart';
+export 'package:fingerprint/src/sources/motion_reduced.dart';
+export 'package:fingerprint/src/sources/number_of_processors.dart';
+export 'package:fingerprint/src/sources/pixel_ratio.dart';
+export 'package:fingerprint/src/sources/platform.dart';
+export 'package:fingerprint/src/sources/screen_resolution.dart';
+export 'package:fingerprint/src/sources/time_zone.dart';
+export 'package:fingerprint/src/sources/vendor.dart';
