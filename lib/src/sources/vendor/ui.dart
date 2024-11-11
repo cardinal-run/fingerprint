@@ -25,9 +25,9 @@ Future<SourceResult> source() async {
       WindowsDeviceInfo() ||
       LinuxDeviceInfo() =>
         io.source(),
-      _ => SourceResult.error('Unable to determine vendor'),
+      _ => const SourceResult.error('Unable to determine vendor'),
     };
   } on PlatformException {
-    return SourceResult.error('Failed to get vendor');
+    return const SourceResult.error('Failed to get vendor');
   }
 }

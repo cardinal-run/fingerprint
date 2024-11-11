@@ -5,12 +5,12 @@ import 'package:fingerprint/fingerprint.dart';
 /// Provides source information.
 SourceResult source() {
   if (_preferredReducedMotion('reduce')) {
-    return SourceResult.value(true);
+    return const SourceResult.value(true);
   }
   if (_preferredReducedMotion('no-preference')) {
-    return SourceResult.value(false);
+    return const SourceResult.value(false);
   }
-  return SourceResult.error('Unknown');
+  return const SourceResult.error('Unknown');
 }
 
 bool _preferredReducedMotion(String value) {
