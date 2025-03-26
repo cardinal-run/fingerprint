@@ -1,5 +1,5 @@
 @TestOn('js')
-library js_test;
+library;
 
 import 'package:fingerprint/fingerprint.dart';
 import 'package:test/test.dart';
