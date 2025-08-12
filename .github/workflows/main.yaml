@@ -26,7 +26,7 @@ jobs:
 
     steps:
       - name: 📚 Git Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
 
       - name: 📝 Setup LCOV
         uses: hrishikesh-kadam/setup-lcov@v1
